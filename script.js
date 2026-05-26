@@ -245,3 +245,90 @@ function showMsg(text, type) {
   m.className = type;
   m.style.display = "block";
 }
+
+
+/* ── About infinite slider ── */
+const aboutSlider = document.querySelector("[data-about-slider]");
+
+if (aboutSlider) {
+  const track = aboutSlider.querySelector(".about-slider-track");
+  const prevBtn = aboutSlider.querySelector(".about-slider-prev");
+  const nextBtn = aboutSlider.querySelector(".about-slider-next");
+
+  let originalSlides = Array.from(track.children);
+  let index = originalSlides.length;
+  let isMoving = false;
+  let autoTimer;
+
+  originalSlides.forEach((slide) => {
+    track.appendChild(slide.cloneNode(true));
+    track.insertBefore(slide.cloneNode(true), track.firstChild);
+  });
+
+  let slides = Array.from(track.children);
+
+  function getStep() {
+    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+    return slides[0].offsetWidth + gap;
+  }
+
+  function setPosition(animated = true) {
+    track.style.transition = animated ? "transform 0.45s ease" : "none";
+    track.style.transform = `translateX(-${index * getStep()}px)`;
+  }
+
+  setPosition(false);
+
+  function goNext() {
+    if (isMoving) return;
+    isMoving = true;
+    index++;
+    setPosition(true);
+  }
+
+  function goPrev() {
+    if (isMoving) return;
+    isMoving = true;
+    index--;
+    setPosition(true);
+  }
+
+  track.addEventListener("transitionend", () => {
+    if (index >= originalSlides.length * 2) {
+      index = originalSlides.length;
+      setPosition(false);
+    }
+
+    if (index < originalSlides.length) {
+      index = originalSlides.length * 2 - 1;
+      setPosition(false);
+    }
+
+    isMoving = false;
+  });
+
+  function startAuto() {
+    autoTimer = setInterval(goNext, 3000);
+  }
+
+  function restartAuto() {
+    clearInterval(autoTimer);
+    startAuto();
+  }
+
+  nextBtn.addEventListener("click", () => {
+    goNext();
+    restartAuto();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    goPrev();
+    restartAuto();
+  });
+
+  window.addEventListener("resize", () => {
+    setPosition(false);
+  });
+
+  startAuto();
+}
