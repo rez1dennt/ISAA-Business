@@ -50,7 +50,6 @@ h3 {
   padding: 0 48px;
 }
 
-
 #site-header {
   position: fixed;
   top: 0;
@@ -70,27 +69,26 @@ h3 {
   gap: 20px;
 }
 
-
 .nav-logo {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  
+
   flex-shrink: 0;
   min-width: 0;
-  cursor: default; 
+  cursor: default;
 }
 
 .logo-img {
   display: block;
   width: auto;
-max-width: 100px;
+  max-width: 100px;
   max-width: 100px;
   object-fit: contain;
   object-position: left center;
   flex-shrink: 0;
   filter: none;
-  cursor: default; 
+  cursor: default;
 }
 
 .nav-logo-text .brand {
@@ -128,7 +126,6 @@ nav ul li a {
 nav ul li a:hover {
   color: var(--blue);
 }
-
 
 .burger {
   display: none;
@@ -224,7 +221,6 @@ nav ul li a:hover {
   }
 }
 
-
 #hero {
   min-height: 100vh;
   display: flex;
@@ -234,7 +230,6 @@ nav ul li a:hover {
   overflow: hidden;
   background: var(--graphite);
 }
-
 
 .hero-bg {
   position: absolute;
@@ -398,11 +393,7 @@ nav ul li a:hover {
   flex-wrap: wrap;
 }
 
-
-
-
 @media (max-width: 1100px) {
-
   .hero-inner {
     gap: 40px;
   }
@@ -413,7 +404,6 @@ nav ul li a:hover {
 }
 
 @media (max-width: 900px) {
-
   #hero {
     padding: 140px 0 90px;
   }
@@ -446,7 +436,6 @@ nav ul li a:hover {
 }
 
 @media (max-width: 640px) {
-
   #hero {
     min-height: auto;
     padding: 120px 0 70px;
@@ -479,7 +468,6 @@ nav ul li a:hover {
 }
 
 @media (max-width: 420px) {
-
   .hero-img {
     height: 240px;
   }
@@ -542,7 +530,6 @@ nav ul li a:hover {
   color: #fff;
 }
 
-
 .btn-secondary-dark {
   display: inline-block;
   padding: 14px 38px;
@@ -579,7 +566,6 @@ nav ul li a:hover {
   }
 }
 
-
 .section {
   padding: 76px 0;
 }
@@ -610,7 +596,6 @@ nav ul li a:hover {
 .scroll-target {
   scroll-margin-top: 78px;
 }
-
 
 .about-grid {
   display: grid;
@@ -759,7 +744,6 @@ nav ul li a:hover {
   }
 }
 
-
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -809,8 +793,6 @@ nav ul li a:hover {
   }
 }
 
-
-
 .docs-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -819,11 +801,11 @@ nav ul li a:hover {
 }
 
 .charity-note {
-    font-size: 14px;
-    color: var(--silver);
-    border-left: 2px solid var(--rule);
-    padding-left: 16px;
-    margin-top: 8px;
+  font-size: 14px;
+  color: var(--silver);
+  border-left: 2px solid var(--rule);
+  padding-left: 16px;
+  margin-top: 8px;
 }
 
 .doc-tile {
@@ -841,9 +823,9 @@ nav ul li a:hover {
   text-decoration: none;
   color: var(--graphite);
 
-  background: rgba(255,255,255,0.45);
+  background: rgba(255, 255, 255, 0.45);
 
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 .doc-tile:hover {
@@ -861,7 +843,6 @@ nav ul li a:hover {
   line-height: 1.7;
 }
 
-
 .donation-qr-section {
   margin-top: 26px;
 }
@@ -876,12 +857,11 @@ nav ul li a:hover {
   border-radius: 14px;
   border: 1.5px solid var(--rule);
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(76,91,191,0.04),
-      rgba(76,91,191,0.015)
-    );
+  background: linear-gradient(
+    135deg,
+    rgba(76, 91, 191, 0.04),
+    rgba(76, 91, 191, 0.015)
+  );
 }
 
 .donation-qr-image {
@@ -946,7 +926,7 @@ nav ul li a:hover {
   letter-spacing: 0.14em;
   text-transform: uppercase;
 
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 .donation-qr-link:hover {
@@ -954,9 +934,7 @@ nav ul li a:hover {
   color: #fff;
 }
 
-
 @media (max-width: 900px) {
-
   .docs-grid {
     grid-template-columns: 1fr;
   }
@@ -975,8 +953,6 @@ nav ul li a:hover {
     height: 150px;
   }
 }
-
-
 
 #apply {
   background: var(--off-white);
@@ -1084,7 +1060,6 @@ nav ul li a:hover {
   border-right: none;
 }
 
-
 .partner-logo-slot {
   width: 150px;
   height: 150px;
@@ -1097,7 +1072,6 @@ nav ul li a:hover {
   max-height: 100%;
   object-fit: contain;
 }
-
 
 .partner-logo-placeholder {
   width: 60px;
@@ -1130,7 +1104,6 @@ nav ul li a:hover {
     border-bottom: none;
   }
 }
-
 
 .contacts-grid {
   display: grid;
@@ -1192,11 +1165,9 @@ nav ul li a:hover {
   }
 }
 
-
-
 .site-footer {
   background: #1f2229;
-  color: rgba(255,255,255,0.72);
+  color: rgba(255, 255, 255, 0.72);
   padding: 72px 0 26px;
   position: relative;
   overflow: hidden;
@@ -1206,12 +1177,11 @@ nav ul li a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(
-      circle at top right,
-      rgba(76,91,191,0.16),
-      transparent 35%
-    );
+  background: radial-gradient(
+    circle at top right,
+    rgba(76, 91, 191, 0.16),
+    transparent 35%
+  );
   pointer-events: none;
 }
 
@@ -1224,7 +1194,7 @@ nav ul li a:hover {
   gap: 70px;
 
   padding-bottom: 42px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-logo {
@@ -1239,7 +1209,7 @@ nav ul li a:hover {
   max-width: 420px;
   font-size: 14px;
   line-height: 1.9;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .footer-title {
@@ -1258,7 +1228,7 @@ nav ul li a:hover {
 }
 
 .footer-links a {
-  color: rgba(255,255,255,0.68);
+  color: rgba(255, 255, 255, 0.68);
   text-decoration: none;
   transition: 0.2s ease;
   font-size: 14px;
@@ -1278,7 +1248,7 @@ nav ul li a:hover {
   font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255, 255, 255, 0.35);
   margin-bottom: 6px;
 }
 
@@ -1286,7 +1256,7 @@ nav ul li a:hover {
 .footer-contact a {
   font-size: 14px;
   line-height: 1.7;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
 }
 
@@ -1306,7 +1276,7 @@ nav ul li a:hover {
   gap: 20px;
 
   font-size: 12px;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .footer-made {
@@ -1328,6 +1298,3 @@ nav ul li a:hover {
     text-align: left;
   }
 }
-
-
-
