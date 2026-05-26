@@ -581,7 +581,7 @@ nav ul li a:hover {
 
 
 .section {
-  padding: 96px 0;
+  padding: 76px 0;
 }
 .section-alt {
   background: var(--off-white);
@@ -1075,7 +1075,7 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 52px 32px;
+  padding: 30px 12px;
   gap: 18px;
   border-right: 1px solid var(--rule);
   text-align: center;
@@ -1086,8 +1086,8 @@ nav ul li a:hover {
 
 
 .partner-logo-slot {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
