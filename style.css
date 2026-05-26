@@ -1279,6 +1279,11 @@ nav ul li a:hover {
   color: rgba(255, 255, 255, 0.35);
 }
 
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-made {
   text-align: right;
 }
